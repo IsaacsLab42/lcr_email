@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "lcr-email"
+version = "1.0.0"
+description = "Send emails through the LCR application on churchofjesuschrist.org."
+authors = ["Isaac Wagner <14634+IsaacsLab42@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "lcr_email", from = "src" }]
+repository = "https://github.com/IsaacsLab42/lcr_email"
+keywords = ["lcr", "churchofjesuschrist"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Religion",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Email",
+    "Topic :: Religion"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/IsaacsLab42/lcr_email/issues"
+
+[tool.poetry.dependencies]
+python = "<3.13,>=3.10"
+requests = "^2.32.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+ipython = "^8.24.0"
+mkdocs = "^1.6.0"
+ufmt = "^2.6.0"
+pre-commit = "^3.7.1"
+tbump = "^6.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
