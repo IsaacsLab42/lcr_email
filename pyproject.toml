@@ -7,9 +7,10 @@ license = "MIT"
 readme = "README.md"
 packages = [{ include = "lcr_email", from = "src" }]
 repository = "https://github.com/IsaacsLab42/lcr_email"
+homepage = "https://github.com/IsaacsLab42/lcr_email"
 keywords = ["lcr", "churchofjesuschrist"]
 classifiers = [
-    "Development Status :: 1 - Planning",
+    "Development Status :: 2 - Pre-Alpha",
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Intended Audience :: Religion",
@@ -30,15 +31,19 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "<3.13,>=3.10"
+church-of-jesus-christ-api = "^0.2.9"
+markdown2 = "^2.4.13"
+python-frontmatter = "^1.1.0"
 requests = "^2.32.2"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.10.0"
+ipdb = "^0.13.13"
 ipython = "^8.24.0"
 mkdocs = "^1.6.0"
-ufmt = "^2.6.0"
+mypy = "^1.10.0"
 pre-commit = "^3.7.1"
 tbump = "^6.11.0"
+ufmt = "^2.6.0"
 
 [build-system]
 requires = ["poetry-core"]

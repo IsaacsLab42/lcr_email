@@ -1,12 +1,12 @@
 <!-- omit in toc -->
 # Contributing to LCR Email
 
-First off, thanks for taking the time to contribute! ❤️
+First off, thanks for taking the time to contribute!
 
 All types of contributions are encouraged and valued. See the [Table of
 Contents](#table-of-contents) for different ways to help and details about how
 this project handles them. Please make sure to read the relevant section before
-making your contribution. It will make it a lot easier for us maintainers and
+making your contribution. It will make it a lot easier for the maintainers, and
 smooth out the experience for all involved. The community looks forward to your
 contributions.
 
@@ -31,7 +31,7 @@ contributions.
 
 This project and everyone participating in it is governed by the [LCR Email Code
 of
-Conduct](https://github.com/IsaacsLab42/lcr_emailblob/master/CODE_OF_CONDUCT.md).
+Conduct](https://github.com/IsaacsLab42/lcr_email/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report
 unacceptable behavior to <14634+IsaacsLab42@users.noreply.github.com>.
 
@@ -51,25 +51,10 @@ recommend the following:
 
 - Open an [Issue](https://github.com/IsaacsLab42/lcr_email/issues/new).
 - Provide as much context as you can about what you're running into.
-- Provide project and platform versions (nodejs, npm, etc), depending on what
-  seems relevant.
+- Provide project, Python, and OS versions, depending on what seems relevant.
 
 We will then take care of the issue as soon as possible.
 
-<!--
-You might want to create a separate issue tag for questions and include it in this description. People should then tag their issues accordingly.
-
-Depending on how large the project is, you may want to outsource the questioning, e.g. to Stack Overflow or Gitter. You may add additional contact and information possibilities:
-- IRC
-- Slack
-- Gitter
-- Stack Overflow tag
-- Blog
-- FAQ
-- Roadmap
-- E-Mail List
-- Forum
--->
 
 ## I Want To Contribute
 
@@ -102,11 +87,11 @@ steps in advance to help us fix any potential bug as fast as possible.
 - Collect information about the bug:
   - Stack trace (Traceback)
   - OS, Platform and Version (Windows, Linux, macOS, x86, ARM)
-  - Version of the interpreter, compiler, SDK, runtime environment, package
-    manager, depending on what seems relevant.
+  - Version of the interpreter, OS, or whatever seems relevant.
   - Possibly your input and the output
   - Can you reliably reproduce the issue? And can you also reproduce it with
     older versions?
+  - Never share LCR usernames or passwords in issues.
 
 <!-- omit in toc -->
 #### How Do I Submit a Good Bug Report?
@@ -115,7 +100,6 @@ steps in advance to help us fix any potential bug as fast as possible.
 > including sensitive information to the issue tracker, or elsewhere in public.
 > Instead sensitive bugs must be sent by email to
 > <14634+IsaacsLab42@users.noreply.github.com>.
-<!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the
 project:
@@ -211,26 +195,33 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ### Releasing
 
-Bump the version using `tbump`. For example, to update the version to 1.1.0:
-
-```bash
-tbump 1.1.0
-```
+This project uses [tbump](https://github.com/your-tools/tbump) to increment versions. **Version bumping should only be done by maintainers**.
 
 ### Improving The Documentation
+
+TODO: This project will eventually use [mkdocs](https://www.mkdocs.org/) for
+documentation.
+
 <!-- TODO
 Updating, improving and correcting the documentation
 
 -->
 
 ## Styleguides
-### Commit Messages
-<!-- TODO
 
--->
+All Python code must be type annotated and formatted using
+[µfmt](https://pypi.org/project/ufmt/), which formats the code using
+[black](https://black.readthedocs.io/en/stable/) and
+[μsort](https://usort.readthedocs.io/en/stable/).
+
+
+### Commit Messages
+
+TODO
 
 ## Join The Project Team
-<!-- TODO -->
+
+TODO
 
 <!-- omit in toc -->
 ## Attribution
